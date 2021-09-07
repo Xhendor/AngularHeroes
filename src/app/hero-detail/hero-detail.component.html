@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+
+  <h2>Detalle de {{hero.name | uppercase}} </h2>
+  <div><span>id: </span>{{hero.id}}</div>
+
+
+  <div>
+    <label for="name">Nombre de heroe: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="Ingresa el nombre">
+  </div>
+  <button (click)="goBack()">Atras</button>
+
+</div>
